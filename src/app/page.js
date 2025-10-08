@@ -37,7 +37,7 @@ export default function Home() {
             <div className={styles.numbers}>
                 {
                     numbers.map((_, i) => {
-                        return <p style={{color: i == index ? "red" : "black"}} onClick={() => {setIndex(i)}}>{i + 1}</p>
+                        return <p key={`n_${i}`} style={{color: i == index ? "red" : "black"}} onClick={() => {setIndex(i)}}>{i + 1}</p>
                     })
                 }
             </div>
